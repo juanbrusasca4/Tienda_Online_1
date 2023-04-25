@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IoT</title>
     <link rel="stylesheet"  href="../style.css">
+    <script src="../script.js"></script>
 </head>
 <body>
 <header>
@@ -20,15 +21,22 @@
         <li class="act-sec">IoT</li>
         <li><a href="contacto.html">CONTACTO</a></li>
     </ul>
-</nav>   
+</nav>  
+<div class="contenido">
+    <aside class="carrito">
+        <div class="ventana">
+            <h2>Carrito</h2>
+            <p id="prod1"></p>
+        </div>
+        
+</aside> 
 <section class="productos">
-    <div class="fila">
-        <div>
+        <div onclick="agregarCarrito()">
             <img src="../Images/ESP32.jpg" alt="ESP 32">
             <p class="prod">ESP 32</p>
             <p class="precio">$1000</p>
-        </div>
     </div>
 </section> 
+</div>
 </body>
 </html>

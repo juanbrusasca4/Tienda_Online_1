@@ -1,52 +1,53 @@
 @font-face {
     font-family: "electronic";
-    src: url('fonts/Cirquee-EaJ78.ttf');
+    src: url('fonts/Fulbo-Tano.otf');
 }
 body{
-    background-color: rgb(185, 185, 185);
+    background-color: #1f2833;
 }
 header{
     text-align: left;
     font-size: large;
     font-family: "electronic",serif;
-    color: rgb(0, 0, 0);
-    background-color:rgb(150, 150, 150);
-    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    color: #04949a;
     border-radius: 10px;
     padding: 3px;
     margin-top: 10px;
 } 
+header h1{
+    margin-bottom: 5px;
+}
+header h3{
+    margin-top: 5px;
+}
 header img{
     max-width: 191px;
     max-height: 92px;
     float: left;
     margin-top: 15px;
 }
-
 nav ul{
     text-align: center;
     overflow: hidden;
-    background-color: rgb(162, 162, 162);
-    box-shadow: 0 0 20px rgba(0,0,0,0.2);
     border-radius: 10px;
     list-style-type: none;
     margin-top: 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 nav li{
-    color: white;
+    color: #c5c6c7;
     float: left;
     padding: 3px 5px;
 }
 nav li a{
-    color: rgb(48, 48, 48);
+    color: #c5c6c7;
     text-decoration: none;
     display: block;
     padding: 14px 18px;
 }
 .act-sec{
     color: black;
-    background-color: rgb(141, 141, 141);
+    background-color: #04949a;
     border-radius: 10px;
     display: block;
     padding: 14px 16px; 
@@ -58,44 +59,48 @@ nav li a:hover{
     border-radius: 10px;
 }
 .productos{
-    max-width: 100%;
-}
-.productos .fila{
+    width: 75%;
     display: flex;
-    justify-content: space-around;
-    margin-top: 10px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
 }
 .productos img{
     width: 100%;
     margin-top: 8px;
 }
-.productos .fila div{
-    border: 1px;
-    border-style: hidden;
-    border-radius: 10px;
-    margin-top: 1%;
+.productos div{
+    border: 1px hidden;
+    border-radius: 7px;
+    background-color: #c5c6c741;
+    overflow: hidden;
     text-align: center;
-    background-color: rgb(185, 185, 185);
-    width: 23.75%;
+    width: 20%;
     cursor: pointer;
     font-family: Arial, Helvetica, sans-serif;
+    margin: 1% 1% 1% 1%;
 }
-.productos .fila img:hover{
+.contenido::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.productos img:hover{
     transform: scale(1.2,1.2);
+    filter: drop-shadow(0px 0px 5px grey);
 }
-
-.productos .fila .prod{
+.productos .prod{
     font-weight: 600;
     margin-bottom: 2px;
 }
-.productos .fila .precio{
+.productos .precio{
     font-weight: 600;
     font-size: smaller;
     opacity: 0.7;
     color: rgb(39, 39, 39);
     margin-top: 2px;
 }
-.productos .fila .precio_ant{
+.productos .precio_ant{
     font-weight: 600;
     font-size: smaller;
     opacity: 0.7;
@@ -104,7 +109,7 @@ nav li a:hover{
     color: red;
     text-decoration: line-through;
 }
-.productos .fila  .precio_act{
+.productos .precio_act{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
     font-size: smaller;
@@ -113,7 +118,7 @@ nav li a:hover{
     margin-top: 2px;
 }
 .input {
-    background-color: rgb(162, 162, 162);
+    background-color: #c5c6c741;
     box-shadow: 0 0 20px rgba(0,0,0,0.2);
     border-radius: 15px;
     padding: 30px;
@@ -125,6 +130,25 @@ nav li a:hover{
     margin-left: auto;
     margin-right: auto;
 }
+.carrito .ventana{
+    border: 1px hidden;
+    border-radius: 7px;
+    background-color: #c5c6c741;
+    width: 23%;
+    float: left;
+    margin-top: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+aside h2{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 4%; 
+}
+@media screen and (max-width: 600px){
+    .productos, .carrito{
+        width: 100%;
+    }
+}
 .contacto label{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -135,17 +159,17 @@ nav li a:hover{
     margin-bottom: 15px;
     outline: none;
     border: hidden;
-    background-color: rgb(184, 184, 184);
+    background-color: #c5c6c741;
 }
 .contacto textarea {
     margin-bottom: 40px;
     border-radius: 10px;
     outline: none;
     border: hidden;
-    background-color: rgb(184, 184, 184);
+    background-color: #c5c6c741;
 }
 .contacto .boton:hover{
-    background-color: #51d94c;
+    background-color: #04949a;
     cursor: pointer;
 }
 .contacto .boton {

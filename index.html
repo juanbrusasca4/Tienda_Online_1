@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catálogo</title>
     <link rel="stylesheet"  href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
 <header>
@@ -21,53 +22,60 @@
         <li><a href="secciones/contacto.html">CONTACTO</a></li>
     </ul>
 </nav>
-<section class="productos">
-    <div class="fila">
-        <div>
-            <img src="Images/nano.jpg" alt="Arduino NANO">
-            <p class="prod">Arduino Nano</p>
-            <p class="precio">$1000</p>
+<div class="contenido">
+    <aside class="carrito">
+        <div class="ventana">
+            <h2>Carrito</h2>
+            <p id="prod1"></p>
         </div>
-        <div>
-            <img src="Images/mega.jpg" alt="Arduino MEGA">
-            <p class="prod">Arduino Mega</p>
-            <p class="precio">$4000</p>
-        </div>
-        <div>
-            <img src="Images/uno.jpg" alt="Arduino UNO">
-            <p class="prod">Arduino Uno</p>
-            <p class="precio">$2800</p>
-        </div>
-        <div>
-            <img src="Images/mini.jpg" alt="Arduino MINI">
-            <p class="prod">Arduino Mini</p>
-            <p class="precio">$800</p>
-        </div>
-    </div>
-    <div class="fila">
-        <div>
-            <img src="Images/ky-028.jpg" alt="KY-028">
-            <p class="prod">KY-028</p>
-            <p class="precio">$500</p>
-        </div>
-        <div>
-            <img src="Images/lcd.jpg" alt="Display LCD 16x2">
-            <p class="prod">Display LCD 16x2</p>
-            <p class="precio">$2100</p>
-        </div>
-        <div>
-            <img src="Images/keypad4x4.jpg" alt="Keypad de membrana 4x4">
-            <p class="prod">Keypad de membrana 4x4</p>
-            <p class="precio">$1800</p>
-        </div>
-        <div>
-            <img src="Images/motor.jpg" alt="Motor DC 12V">
-            <p class="prod">Motor DC 12V</p>
-            <p class="precio">$800</p>
-        </div>
-    </div>
-</section>
+        
+    </aside>
+    <section class="productos">
+            <div onclick="agregarCarrito()">
+                <img src="Images/nano.jpg" alt="Arduino NANO">
+                <p class="prod">Arduino Nano</p>
+                <p class="precio">$1000</p>
+            </div>
+            <div onclick="agregarCarrito()">
+                <img src="Images/mega.jpg" alt="Arduino MEGA">
+                <p class="prod">Arduino Mega</p>
+                <p class="precio">$4000</p>
+            </div>
+            <div onclick="agregarCarrito()">
+                <img src="Images/uno.jpg" alt="Arduino UNO">
+                <p class="prod">Arduino Uno</p>
+                <p class="precio">$2800</p>
+            </div>
+            <div onclick="agregarCarrito()">
+                <img src="Images/mini.jpg" alt="Arduino MINI">
+                <p class="prod">Arduino Mini</p>
+                <p class="precio">$800</p>
+            </div>
+            <div onclick="agregarCarrito()">
+                <img src="Images/ky-028.jpg" alt="KY-028">
+                <p class="prod">KY-028</p>
+                <p class="precio">$500</p>
+            </div>
+            <div onclick="agregarCarrito()">
+                <img src="Images/lcd.jpg" alt="Display LCD 16x2">
+                <p class="prod">Display LCD 16x2</p>
+                <p class="precio">$2100</p>
+            </div>
+            <div onclick="agregarCarrito()">
+                <img src="Images/keypad4x4.jpg" alt="Keypad de membrana 4x4">
+                <p class="prod">Keypad de membrana 4x4</p>
+                <p class="precio">$1800</p>
+            </div>
+            <div onclick="agregarCarrito()">
+                <img src="Images/motor.jpg" alt="Motor DC 12V">
+                <p class="prod">Motor DC 12V</p>
+                <p class="precio">$800</p>
+            </div>
+    </section>
+</div>
 <footer>
+    <input type="button" value="BOTON" onclick="escribir()"> 
+    <p id="aca"></p>
 </footer>
 </body>
 </html>
